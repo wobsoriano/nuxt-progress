@@ -1,0 +1,43 @@
+{
+  "name": "nuxt-progress",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.1.1",
+  "license": "MIT",
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prepublishOnly": "nr build",
+    "build": "nuxt-module-build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "release": "bumpp --commit --push --tag && pnpm publish"
+  },
+  "dependencies": {
+    "@nuxt/kit": "^3.0.0-rc.3",
+    "defu": "^6.0.0",
+    "nprogress": "^0.2.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.23.1",
+    "@antfu/ni": "^0.16.2",
+    "@nuxt/module-builder": "latest",
+    "@types/nprogress": "^0.2.0",
+    "bumpp": "^7.1.1",
+    "eslint": "^8.14.0",
+    "nuxt": "^3.0.0-rc.3",
+    "pnpm": "^7.1.1"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
+  }
+}
