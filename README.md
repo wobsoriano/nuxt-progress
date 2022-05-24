@@ -9,7 +9,7 @@ Show a progress bar between routes.
 ```ts
 export default defineNuxtConfig({
   modules: ['nuxt-progress'],
-  nuxtProgress: {
+  progress: {
     // Default: 2px
     height: '2px',
     // Default: #29D

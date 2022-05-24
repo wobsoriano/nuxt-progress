@@ -25,7 +25,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     addPlugin(resolve('./runtime/plugin'))
 
-    nuxt.options.runtimeConfig.public.nuxtProgress = defu(nuxt.options.runtimeConfig.public.nuxtProgress, {
+    nuxt.options.runtimeConfig.public.progress = defu(nuxt.options.runtimeConfig.public.progress, {
       ...options,
     })
   },

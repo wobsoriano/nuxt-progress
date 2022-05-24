@@ -20,7 +20,7 @@ function updateColor(color: string) {
 
 // @ts-expect-error: Resolved by Nuxt
 export default defineNuxtPlugin((nuxtApp) => {
-  const config = useRuntimeConfig().public.nuxtProgress
+  const config = useRuntimeConfig().public.progress
 
   nuxtApp.hook('app:mounted', () => {
     config.options && NProgress.configure(config.options)
