@@ -7,7 +7,8 @@ export default defineNuxtPlugin((nuxtApp) => {
   const config = useRuntimeConfig().public.progress
 
   nuxtApp.hook('app:mounted', () => {
-    config.options && NProgress.configure(config.options)
+    if (Object.keys(config.options).length > 0)
+      NProgress.configure(config.options)
 
     nuxtApp.hook('page:start', () => {
       NProgress.start()
