@@ -4,7 +4,13 @@
 
 Show a progress bar between routes.
 
-## Customizing
+## Installation
+
+```bash
+npm install nuxt-progress
+```
+
+## Usage
 
 ```ts
 export default defineNuxtConfig({
