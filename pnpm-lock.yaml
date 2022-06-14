@@ -5,8 +5,10 @@ specifiers:
   '@antfu/ni': ^0.16.2
   '@nuxt/kit': ^3.0.0-rc.3
   '@nuxt/module-builder': latest
+  '@types/dedent': ^0.7.0
   '@types/nprogress': ^0.2.0
   bumpp: ^7.1.1
+  dedent: ^0.7.0
   defu: ^6.0.0
   eslint: ^8.14.0
   nprogress: ^0.2.0
@@ -15,6 +17,7 @@ specifiers:
 
 dependencies:
   '@nuxt/kit': 3.0.0-rc.3
+  dedent: 0.7.0
   defu: 6.0.0
   nprogress: 0.2.0
 
@@ -22,6 +25,7 @@ devDependencies:
   '@antfu/eslint-config': 0.23.1_eslint@8.16.0
   '@antfu/ni': 0.16.2
   '@nuxt/module-builder': 0.1.7
+  '@types/dedent': 0.7.0
   '@types/nprogress': 0.2.0
   bumpp: 7.1.1
   eslint: 8.16.0
@@ -896,6 +900,10 @@ packages:
   /@trysound/sax/0.2.0:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
+    dev: true
+
+  /@types/dedent/0.7.0:
+    resolution: {integrity: sha512-EGlKlgMhnLt/cM4DbUSafFdrkeJoC9Mvnj0PUCU7tFmTjMjNRT957kXCx0wYm3JuEq4o4ZsS5vG+NlkM2DMd2A==}
     dev: true
 
   /@types/estree/0.0.39:
@@ -1983,6 +1991,10 @@ packages:
     resolution: {integrity: sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=}
     engines: {node: '>=0.10'}
     dev: true
+
+  /dedent/0.7.0:
+    resolution: {integrity: sha512-Q6fKUPqnAHAyhiUgFU7BUzLiv0kd8saH9al7tnu5Q/okj6dnupxyTgFIBjVzJATdfIAm9NAsvXNzjaKa+bxVyA==}
+    dev: false
 
   /deep-extend/0.6.0:
     resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}

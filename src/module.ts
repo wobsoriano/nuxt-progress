@@ -1,7 +1,7 @@
-import fs from 'fs/promises'
 import { defu } from 'defu'
 import type { NProgressOptions } from 'nprogress'
 import { addPlugin, createResolver, defineNuxtModule, extendViteConfig } from '@nuxt/kit'
+import dedent from 'dedent'
 
 export interface ModuleOptions {
   height: string
@@ -19,10 +19,10 @@ export default defineNuxtModule<ModuleOptions>({
     color: '#29D',
     options: {},
   },
-  async setup(options, nuxt) {
+  setup(options, nuxt) {
     const { resolve } = createResolver(import.meta.url)
 
-    const styles = `
+    const styles = dedent`
     #nprogress {
       pointer-events: none;
     }
@@ -82,10 +82,12 @@ export default defineNuxtModule<ModuleOptions>({
     @keyframes nprogress-spinner {
       0%   { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
-    }`.replace(/(\r\n|\n|\r)/gm, '')
+    }`
 
-    await fs.writeFile(resolve('./runtime/nprogress.css'), styles)
-    nuxt.options.css.push(resolve('./runtime/nprogress.css'))
+    nuxt.options.app.head.style = nuxt.options.app.head.style || []
+    nuxt.options.app.head.style.push({
+      children: styles,
+    })
 
     extendViteConfig((config) => {
       config.optimizeDeps = config.optimizeDeps || {}

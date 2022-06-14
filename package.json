@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "^3.0.0-rc.3",
+    "dedent": "^0.7.0",
     "defu": "^6.0.0",
     "nprogress": "^0.2.0"
   },
@@ -36,6 +37,7 @@
     "@antfu/eslint-config": "^0.23.1",
     "@antfu/ni": "^0.16.2",
     "@nuxt/module-builder": "latest",
+    "@types/dedent": "^0.7.0",
     "@types/nprogress": "^0.2.0",
     "bumpp": "^7.1.1",
     "eslint": "^8.14.0",
