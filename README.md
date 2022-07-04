@@ -1,6 +1,6 @@
 # nuxt-progress
 
-[![Version](https://img.shields.io/npm/v/nuxt-progress?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/nuxt-progress)
+[![Version](https://img.shields.io/npm/v/nuxt-progress?style=flat&colorA=000000&colorB=000000)](https://www.npmjs.com/package/nuxt-progress) ![NPM](https://img.shields.io/npm/l/nuxt-progress?style=flat&colorA=000000&colorB=000000)
 
 Show a progress bar between routes.
 
